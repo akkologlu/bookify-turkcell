@@ -1,4 +1,4 @@
-const apiURL = "http://localhost:3000/books";
+const apiURL = "https://bookify-server-cfhf.onrender.com/books";
 class Request {
   static async request(method, endpoint, data = null) {
     const url = `${apiURL}${endpoint ? `/${endpoint}` : ""}`;
