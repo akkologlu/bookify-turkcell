@@ -1,0 +1,66 @@
+.book-col {
+  margin-bottom: 200px;
+  .bookImageDiv {
+    perspective: 1000px;
+    box-shadow: 5px 5px 15px #333;
+    background-color: #fff2e4d3;
+    &:hover {
+      .bookImage {
+        transform: rotateY(-180deg);
+      }
+    }
+    .book-inner-content {
+      background-color: #fff2e4d3;
+    }
+    .bookImage {
+      transform-origin: left center;
+      transition: 2s;
+      width: 150px;
+      height: 250px;
+    }
+  }
+}
+.hero-section {
+  height: 90vh;
+  .hero-content {
+    height: fit-content;
+    transform: translateY(-100px);
+    .brand-name {
+      font-size: 120px;
+    }
+  }
+}
+.fs-10 {
+  font-size: 10px;
+}
+@media (max-width: 992px) {
+  .hero-section {
+    height: 50vh;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
+    .hero-content {
+      .brand-name {
+        font-size: 80px;
+      }
+    }
+  }
+}
+@keyframes horizontal-move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.horizontal-move {
+  animation: horizontal-move 3s ease-in-out infinite;
+}
+.animation-duration {
+  animation-duration: 2s;
+}
